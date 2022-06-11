@@ -8,10 +8,10 @@ spec:
   capacity:
     storage: 5Gi
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: csi-gcs
+  storageClassName: csi-gcs-sc
   csi:
     driver: gcs.csi.ofek.dev
     volumeHandle: csi-gcs
     nodePublishSecretRef:
       name: csi-gcs-logs-secret
-      namespace: airflow
+      namespace: default
