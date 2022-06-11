@@ -13,4 +13,4 @@ spec:
     driver: gcs.csi.ofek.dev
     volumeHandle: csi-gcs
     nodePublishSecretRef:
-namespace: airflow
+namespace: default
